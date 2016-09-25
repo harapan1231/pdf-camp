@@ -7,7 +7,7 @@
 
 * split
   ```
-  qpdf infile.pdf --pages #{from}-#{to} -- #{outfile.pdf}
+  qpdf #{infile.pdf} --pages #{from}-#{to} -- #{outfile.pdf}
   ```
 
 * linearize (for web)

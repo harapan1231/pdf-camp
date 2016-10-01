@@ -24,3 +24,5 @@
   ```
   qpdf #{infile.pdf} --password=#{password} --decrypt #{outfile.pdf}
   ```
+  
+* url to pdf

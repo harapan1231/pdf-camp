@@ -1,21 +1,5 @@
 # pdf-camp
 
-### Setup
-
-* install ocaml and opam
-
-* run:
-    * `opam init`
-    * `opam config env`
-
-* modify .login:
-    * `source ~/.opam/opam-init/init.csh > & /dev/null || true`
-
-* run:
-    * `ocamlbuild -pkg opium.unix server.native`
-
-### Usage
-
 * merge
   ```
   qpdf --empty --pages #{[infile.pdf...]} -- #{outfile.pdf}

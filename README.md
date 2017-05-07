@@ -14,6 +14,9 @@
 * run:
     * `ocamlbuild -pkg opium.unix server.native`
 
+* note:
+    * default port = 3000
+
 ### Usage
 
 * merge

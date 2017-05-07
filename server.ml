@@ -11,7 +11,7 @@ let json_of_person { name ; age } =
   dict [ "name", (string name)
        ; "age", (int age) ]
 
-let print_param = O.put "/hello/:name" begin fun req ->
+let print_param = O.get "/hello/:name" begin fun req ->
   `String ("Hello " ^ O.param req "name") |> O.respond'
 end
 

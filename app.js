@@ -1,12 +1,13 @@
-var app = {};
-
-app.view = 
+function App(props) {
+  return (
     h("div", {class: "container"}, [
-        h("label", [
-            h("input", {type: "number"}),
-            h("span", "Text")
+      h("label", [
+        h("input", {type: "number"}),
+          h("span", "Text")
         ]),
-        h("button", {class: "button"},  "Click")]
-    );
+      h("button", {class: "button"},  "Click")]
+    )
+  );
+}
 
-Inferno.render(app.view, document.getElementById("app"));
+Inferno.render(Inferno.createElement(App), document.getElementById("app"));
